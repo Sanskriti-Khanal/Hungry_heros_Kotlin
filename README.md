@@ -126,6 +126,136 @@ cd HungryHeros
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Click Run > Run 'app' in Android Studio.
 
+## Dependencies
+
+Add these to your **app/build.gradle:**
+
+```sh
+dependencies {
+    // AndroidX Libraries
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
+
+    // Material Design
+    implementation(libs.material)
+
+    // Firebase
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.database)
+
+    // Testing
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+
+    // Libraries
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation("com.cloudinary:cloudinary-android:2.1.0")
+    implementation("com.squareup.picasso:picasso:2.8")
+
+    // Mockito (Testing)
+    testImplementation("org.mockito:mockito-core:5.6.0")
+    testImplementation("org.mockito:mockito-inline:3.12.4")
+    androidTestImplementation("org.mockito.kotlin:mockito-kotlin:4.1.0")
+
+    // AndroidX Test
+    androidTestImplementation("androidx.test:runner:1.2.0")
+    androidTestImplementation("androidx.test:rules:1.2.0")
+}
+```
+Also, ensure you have the Google Services plugin:
+
+```sh
+apply plugin: 'com.google.gms.google-services'
+```
+## Project Structure
+```sh
+app/
+├── src/
+│   ├── main/
+│   │   ├── java/com/example/hungryheros/
+│   │   │   ├── adapter/           # RecyclerView adapters
+│   │   │   ├── model/             # Data models (Reservation, Profile, Review)
+│   │   │   ├── repository/        # Firebase interaction logic
+│   │   │   ├── ui/
+│   │   │   │   ├── activity/      # Activities (Login, Register, Dashboard, Reservation, Profile, Review)
+│   │   │   ├── viewmodel/         # ViewModels for authentication and data management
+│   │   ├── res/
+│   │   │   ├── layout/            # XML layouts for UI
+│   │   │   ├── menu/              # Menu resources
+│   │   │   ├── values/            # Colors, styles, and strings
+```
+
+
+## Usage
+**Launch the App:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Starts with a login screen.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Redirects to the dashboard if already authenticated.
+
+**Authentication:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Register with email/password or log in with existing credentials.
+
+**Dashboard:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•View and manage table reservations.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Access profile and review management sections.
+
+**Book a Table:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Fill in reservation details and submit.
+
+**Profile Management:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•View and edit profile information.
+
+**Review Management:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Submit, edit, or delete reviews.
+
+**Logout:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Log out via the profile management section.
+
+## Contributing
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Fork the repository.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Create a feature branch:
+```sh
+git checkout -b feature/YourFeature
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Commit your changes:
+```sh
+git commit -m 'Add YourFeature'
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Push to the branch:
+```sh
+git push origin feature/YourFeature
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Open a Pull Request.
+
+## Acknowledgments
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Built with Kotlin and Android Jetpack.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Powered by Firebase Authentication and Firestore.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Inspired by Material Design guidelines
+
+
+
+
+
+
+
+
+
 
 
 
