@@ -96,6 +96,39 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Android Device/Emulator: Running API 21 (Lollipop) or higher.
 
+## Setup Instructions
+
+**Clone the Repository:**
+```sh
+git clone https://github.com/Sanskriti-Khanal/Hungry_heros_Kotlin
+cd HungryHeros
+```
+
+**Firebase Configuration:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Create a Firebase project at Firebase Console.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Enable Email/Password Authentication in the Authentication section.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Enable Firestore Database.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Download google-services.json and place it in the app/ directory.
+
+**Open in Android Studio:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Open the project in Android Studio.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Sync the project with Gradle files.
+
+**Build and Run:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Connect an Android device or start an emulator.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•Click Run > Run 'app' in Android Studio.
+
+
+
+
 
 
 
